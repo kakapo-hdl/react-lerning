@@ -16,9 +16,9 @@ class TodoList extends Component {
     store.subscribe(this.handleStoreChange)
   }
   componentDidMount(){
-    axios.get('/todolist').then(
+    axios.get('http://localhost.charlesproxy.com:3001/api/todolist').then(
       res=>{
-        console.log(res);
+        console.log(res)
       }
     )
   }
